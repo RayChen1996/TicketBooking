@@ -1,4 +1,3 @@
-import React from "react";
 import logoSvg from "../../../../public/Logo.svg";
 import searchSvg from "../../../../public/search-1.svg";
 import registerSvg from "../../../../public/register.svg";
