@@ -1,4 +1,5 @@
 import logoSvg from "../../../../public/Logo.svg";
+import logoMSvg from "../../../../public/LogoM.svg";
 import searchSvg from "../../../../public/search-1.svg";
 import registerSvg from "../../../../public/register.svg";
 import useSvg from "../../../../public/login.svg";
@@ -8,7 +9,9 @@ export default function AppNav() {
     <header className=" sticky top-0 ">
       <div className="flex justify-around py-2 items-center">
         <div className="flex items-center gap-3">
-          <img src={logoSvg} alt="" />
+          <img src={logoSvg} alt="" className=" hidden md:block" />
+          <img src={logoMSvg} alt="" className=" md:hidden" />
+
           <label className="flex items-center" htmlFor="search">
             <input
               type="search"
