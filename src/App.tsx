@@ -6,6 +6,8 @@ import Block2 from "./components/pages/home/Block2";
 import SectionTitle from "./components/SectionTitle";
 import Advistise from "./components/pages/home/Advistise";
 import Block7 from "./components/pages/home/Block7";
+import ActivityCards from "./components/pages/home/ActivityCards";
+import Follow from "./components/pages/home/Follow";
 
 function App() {
   return (
@@ -14,11 +16,13 @@ function App() {
       <Block1 />
       <Block2 />
       <SectionTitle chtTitle="近期活動" engTitle="RECENT" />
+      <ActivityCards />
       <SectionTitle chtTitle="線上活動" engTitle="ONLINE" />
 
       <Advistise description="活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS" />
       <Advistise description="活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS" />
 
+      <Follow />
       <Block7
         title="此刻打盹，你將做夢；此刻學習，你將圓夢"
         subTitle="——我也不知道誰說的"
