@@ -1,4 +1,3 @@
-import React from "react";
 import active1 from "../../../../public/active1.png";
 import active2 from "../../../../public/active2.png";
 import active3 from "../../../../public/active3.png";
