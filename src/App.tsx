@@ -9,6 +9,7 @@ import Block7 from "./components/pages/home/Block7";
 import ActivityCards from "./components/pages/home/ActivityCards";
 import Follow from "./components/pages/home/Follow";
 import OnlineBlock from "./components/pages/home/OnlineBlock";
+import Block8 from "./components/pages/home/Block8";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <OnlineBlock />
 
       <Advistise description="活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS" />
+      <Block8 />
       <Advistise description="活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS" />
 
       <Follow />
