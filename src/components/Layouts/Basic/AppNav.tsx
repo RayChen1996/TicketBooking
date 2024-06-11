@@ -6,7 +6,7 @@ import useSvg from "../../../../public/login.svg";
 import menuSvg from "../../../../public/menu.svg";
 export default function AppNav() {
   return (
-    <header className=" sticky top-0 ">
+    <header className=" sticky top-0  z-20 backdrop-blur-2xl">
       <div className="flex justify-around py-2 items-center">
         <div className="flex items-center gap-3">
           <img src={logoSvg} alt="" className=" hidden md:block" />

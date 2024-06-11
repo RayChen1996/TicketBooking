@@ -8,6 +8,7 @@ import Advistise from "./components/pages/home/Advistise";
 import Block7 from "./components/pages/home/Block7";
 import ActivityCards from "./components/pages/home/ActivityCards";
 import Follow from "./components/pages/home/Follow";
+import OnlineBlock from "./components/pages/home/OnlineBlock";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <SectionTitle chtTitle="近期活動" engTitle="RECENT" />
       <ActivityCards />
       <SectionTitle chtTitle="線上活動" engTitle="ONLINE" />
+      <OnlineBlock />
 
       <Advistise description="活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS" />
       <Advistise description="活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS" />
