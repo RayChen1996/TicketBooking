@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/home";
 import Event from "./components/pages/Event";
 import Views from "./components/pages/Views";
+import Payment from "./components/pages/Payment";
 import Login from "./components/pages/sign-in";
 import EventDetail from "./components/pages/Event/Detail";
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/sign-in" element={<Login />} />
         <Route path="/check" element={<Views />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/event/:id" element={<EventDetail />} />
 
         {/* <Route path="*" element={<NotFound />} /> */}

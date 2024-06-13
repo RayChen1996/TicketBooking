@@ -51,3 +51,27 @@
   font-weight: 400;
   font-style: normal;
 }
+
+.steps .step img {
+  position: absolute; /* 將圖標絕對定位在步驟內 */
+  top: 0;
+  left: 0;
+}
+
+.steps .step.complete img {
+  display: block; /* 顯示完成圖標 */
+}
+
+.steps .step:not(.complete) img {
+  display: none; /* 隱藏未完成步驟的圖標 */
+}
+
+.steps .step:before {
+  height: 1px; /* 調整連接線寬度 */
+  background-color: var(--fallback-b3, oklch(var(--b3) / var(--tw-bg-opacity)));
+}
+
+.steps-vertical .step:before {
+  width: 1px; /* 調整垂直連接線寬度 */
+  height: 100%;
+}
