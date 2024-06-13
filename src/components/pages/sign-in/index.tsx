@@ -22,7 +22,7 @@ function FormBlock() {
           <input
             type="text"
             placeholder="請輸入帳號"
-            className="input input-bordered w-full "
+            className="input input-bordered w-full border-primary border-2 rounded-none"
           />
         </label>
 
@@ -33,10 +33,10 @@ function FormBlock() {
           <input
             type="text"
             placeholder="請輸入密碼"
-            className="input input-bordered w-full  "
+            className="input input-bordered w-full border-primary border-2 rounded-none  "
           />
         </label>
-        <button className=" btn bg-primary text-white">
+        <button className=" mt-8 btn bg-primary text-white rounded-none">
           登入
           <img src={arrowSvg} alt="" className=" text-white" />
         </button>
