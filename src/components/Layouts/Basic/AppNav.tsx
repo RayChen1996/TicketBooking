@@ -4,13 +4,16 @@ import searchSvg from "../../../../public/search-1.svg";
 import registerSvg from "../../../../public/register.svg";
 import useSvg from "../../../../public/login.svg";
 import menuSvg from "../../../../public/menu.svg";
+import { Link } from "react-router-dom";
 export default function AppNav() {
   return (
     <header className=" sticky top-0  z-20 backdrop-blur-2xl">
       <div className="flex justify-around py-2 items-center">
         <div className="flex items-center gap-3">
-          <img src={logoSvg} alt="" className=" hidden md:block" />
-          <img src={logoMSvg} alt="" className=" md:hidden" />
+          <Link to={"/"}>
+            <img src={logoSvg} alt="" className=" hidden md:block" />
+            <img src={logoMSvg} alt="" className=" md:hidden" />
+          </Link>
 
           <label className="flex items-center" htmlFor="search">
             <input

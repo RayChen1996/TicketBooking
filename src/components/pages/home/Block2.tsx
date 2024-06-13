@@ -3,6 +3,7 @@ import Svg2 from "../../../../public/heart.svg";
 import Svg3 from "../../../../public/museu.svg";
 import Svg4 from "../../../../public/cutlery.svg";
 import Svg5 from "../../../../public/snowed-mountains.svg";
+import { Link } from "react-router-dom";
 
 export default function Block2() {
   const _data: BoxProps[] = [
@@ -32,11 +33,13 @@ export default function Block2() {
       {_data.map((item, idx) => (
         <Box key={`item-${idx}`} label={item.label} svg={item.svg} />
       ))}
-      <div className=" m-auto text-nowrap text-2xl text-secondary md:text-5xl flex items-center bg-primary border-primary border-4 flex-col md:py-9 md:px-[58px] px-8 py-6  ">
-        <span className="mt-3">探索 </span>
+      <Link to={"/Event"}>
+        <div className=" m-auto text-nowrap text-2xl text-secondary md:text-5xl flex items-center bg-primary border-primary border-4 flex-col md:py-9 md:px-[58px] px-8 py-6  ">
+          <span className="mt-3">探索 </span>
 
-        <span className=" mt-3">更多 </span>
-      </div>
+          <span className=" mt-3">更多 </span>
+        </div>
+      </Link>
     </div>
   );
 }
