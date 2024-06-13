@@ -1,0 +1,39 @@
+.steps .step {
+  background-color: #f0f0f0; /* 修改背景顏色 */
+  color: #333; /* 修改文字顏色 */
+}
+
+.steps .step-primary {
+  background-color: #4caf50; /* 修改活動步驟的背景顏色 */
+  color: #fff;
+}
+.steps .step.active {
+  background-color: #4caf50; /* 修改活動步驟的背景顏色 */
+  color: #fff; /* 修改活動步驟的文字顏色 */
+}
+
+.steps .step {
+  background-color: #f0f0f0; /* 修改背景顏色 */
+  color: #333; /* 修改文字顏色 */
+}
+.steps .step:after {
+  height: 2rem /* 32px */;
+  width: 2rem /* 32px */;
+  border-radius: 0; /* 取消圓角，變成正方形 */
+}
+.steps .step.active {
+  background-color: #4caf50; /* 修改活動步驟的背景顏色 */
+  color: #fff; /* 修改活動步驟的文字顏色 */
+}
+.steps .step-primary + .step-primary:before,
+.steps .step-primary:after {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p, oklch(0.16 0 0));
+  --tw-text-opacity: 1;
+  color: var(--fallback-pc, oklch(var(--pc) / var(--tw-text-opacity)));
+}
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -3,6 +3,7 @@ import SectionTitle from "../../SectionTitle";
 import Bg from "../../../../public/eventBG.png";
 import lineSvg from "../../../../public/line.svg";
 import line1Svg from "../../../../public/Line1.svg";
+import { Link } from "react-router-dom";
 export default function EventDetail() {
   // const { id } = useParams(); // 使用 useParams 來獲取動態參數
 
@@ -48,9 +49,11 @@ function Tbl() {
         <td>{ticketType}</td>
         <td>${Price}</td>
         <td>
-          <button className=" px-6 py-2 border-2 border-primary rounded-none">
-            立即購票
-          </button>
+          <Link to={"/check"}>
+            <button className=" px-6 py-2 border-2 border-primary rounded-none">
+              立即購票
+            </button>
+          </Link>
         </td>
       </tr>
     );

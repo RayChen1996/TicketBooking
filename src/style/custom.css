@@ -1,0 +1,53 @@
+.steps .step:after {
+  --tw-bg-opacity: 0;
+
+  /* background-color: var(--fallback-b3, oklch(var(--b3) / var(--tw-bg-opacity)));
+  --tw-text-opacity: 1; */
+  color: black;
+  /* color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity))); */
+}
+
+.steps .step:after {
+  height: 2rem /* 32px */;
+  width: 2rem /* 32px */;
+  border-radius: 0; /* 取消圓角，變成正方形 */
+  color: #fbff22;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  color: black;
+}
+.steps .step.active {
+  background-color: #4caf50; /* 修改活動步驟的背景顏色 */
+  color: #fff; /* 修改活動步驟的文字顏色 */
+}
+.steps .step[data-content]:after {
+  color: #fbff22; /* 設置包含 data-content 屬性的步驟文字顏色 */
+}
+.steps .step-primary + .step-primary:before,
+.steps .step-primary:after {
+  --tw-bg-opacity: 1;
+  /* background-color: var(--fallback-p, oklch(0.16 0 0)); */
+  background-color: black;
+  color: #fbff22;
+  --tw-text-opacity: 1;
+  /* padding-left: 18px; */
+  /* padding-right: 18px; */
+  /* color: var(--fallback-pc, oklch(var(--pc) / var(--tw-text-opacity))); */
+}
+.steps-vertical .step:before {
+  width: 1px; /* 设置垂直连接线宽度为 1px */
+  height: 100%;
+}
+.steps .step:before {
+  height: 1px; /* 设置连接线宽度为 1px */
+  /* background-color: var(
+    --fallback-b3,
+    oklch(var(--b3) / var(--tw-bg-opacity))
+  );   */
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
