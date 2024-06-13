@@ -34,10 +34,12 @@ export default function AppNav() {
             <label htmlFor="">REGISTER</label>
           </span>
 
-          <span className="flex">
-            <img src={useSvg} alt="" />
-            <label htmlFor="">LOGIN</label>
-          </span>
+          <Link to={"/sign-in"}>
+            <span className="flex">
+              <img src={useSvg} alt="" />
+              <label htmlFor="">LOGIN</label>
+            </span>
+          </Link>
         </div>
         <div className="flex items-center md:hidden">
           <span className="flex border border-primary rounded-md p-2">

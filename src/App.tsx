@@ -5,6 +5,7 @@ import AppFooter from "./components/Layouts/Basic/AppFooter";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/pages/home";
 import Event from "./components/pages/Event";
+import Login from "./components/pages/sign-in";
 import EventDetail from "./components/pages/Event/Detail";
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/event" element={<Event />} />
+        <Route path="/sign-in" element={<Login />} />
         <Route path="/event/:id" element={<EventDetail />} />
+
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
 
