@@ -7,6 +7,7 @@ import act3Png from "../../../../public/act3.png";
 import act4Png from "../../../../public/act4.png";
 import act5Png from "../../../../public/act5.png";
 import act6Png from "../../../../public/act6.png";
+import { Link } from "react-router-dom";
 
 export default function ActivityCards() {
   const _data: ActivityCardProps[] = [
@@ -102,11 +103,12 @@ function ActivityCard({
           <img src={decroSvg} alt="" className="py-3" />
           <span>{type}</span>
         </div>
-
-        <div className=" flex items-center">
-          <strong>{status}</strong>
-          <img src={rightSvg} alt="" />
-        </div>
+        <Link to={`/Event/${dateStr}`}>
+          <div className=" flex items-center h-full">
+            <strong>{status}</strong>
+            <img src={rightSvg} alt="" />
+          </div>
+        </Link>
       </div>
       <div className=" h-1 bg-primary"></div>
     </div>
